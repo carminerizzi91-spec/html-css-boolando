@@ -33,10 +33,11 @@ body {
 }
 
 .logo img {
-  height: 40px;          /* Altezza del logo */
-  width: auto;           /* Mantiene le proporzioni */
-  object-fit: contain;   /* Evita distorsioni */
+  height: 40px;          
+  width: auto;           
+  object-fit: contain;   
   display: block;
+  
 }
 
 /* GRID PRODOTTI */
@@ -79,4 +80,102 @@ body {
 
 .img-container:hover .img-front {
   opacity: 0;
+}
+/* INFO */
+.info {
+  margin-top: 10px;
+}
+
+.brand {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.price {
+  font-size: 0.95rem;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.old-price {
+  color: #777;
+  text-decoration: line-through;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #1a1a1a; /* nero */
+  color: #fff;
+  padding: 40px 0 20px;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+/* --- COLONNA SINISTRA --- */
+.footer-left h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-left li {
+  margin: 6px 0;
+}
+
+.footer-left a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
+/* --- COLONNA DESTRA --- */
+.footer-right h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials a img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* --- PARTE INFERIORE --- */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 0.8rem;
+  color: #aaa;
 }
