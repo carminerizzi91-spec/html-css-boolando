@@ -31,3 +31,52 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+
+.logo img {
+  height: 40px;          /* Altezza del logo */
+  width: auto;           /* Mantiene le proporzioni */
+  object-fit: contain;   /* Evita distorsioni */
+  display: block;
+}
+
+/* GRID PRODOTTI */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product {
+  text-align: left;
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* Effetto hover: cambia immagine */
+.img-container .img-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.img-container:hover .img-back {
+  opacity: 1;
+}
+
+.img-container:hover .img-front {
+  opacity: 0;
+}
